@@ -1,0 +1,20 @@
+/* ---- GLOBAL STYLES ---- */
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    display: block;
+}
+
+/* ---- GRID STYLES ---- */
+
+/* SEARCH AREA */
+.search_area {
+    display: grid;
+    grid-template-columns: [thelogo] 1fr [input_search]minmax(630px, 2040px) [apps_signin] 1fr;
+    align-items: center;
+    height: 46px;
+    margin: auto;
+}
