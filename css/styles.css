@@ -10,11 +10,21 @@ a {
 
 /* ---- GRID STYLES ---- */
 
-/* SEARCH AREA */
-.search_area {
+.container {
     display: grid;
-    grid-template-columns: [thelogo] 1fr [input_search]minmax(630px, 2040px) [apps_signin] 1fr;
-    align-items: center;
-    height: 46px;
-    margin: auto;
+    grid-template-areas: 
+            'header header  header  header  header'
+            '.      nav     nav     nav     .'
+            '.      main    main    main    aside'
+            '.      main    main    main    aside'
+            '.      main    main    main    aside'
+            '.      main    main    main    aside'
+            '.      main    main    main    .'
+            '.      main    main    main    .'
+            'footer footer  footer  footer  footer' 
+}
+
+/* SEARCH AREA */   
+.header {
+    grid
 }
