@@ -12,19 +12,47 @@ a {
 
 .container {
     display: grid;
+    grid-template-columns: 150px 1fr 1fr;
+    grid-template-rows: 58px 58px repeat(16, 1fr);
     grid-template-areas: 
-            'header header  header  header  header'
-            '.      nav     nav     nav     .'
-            '.      main    main    main    aside'
-            '.      main    main    main    aside'
-            '.      main    main    main    aside'
-            '.      main    main    main    aside'
-            '.      main    main    main    .'
-            '.      main    main    main    .'
-            'footer footer  footer  footer  footer' 
+            'header header  header'
+            '.      nav     .'
+            '.      about   .'      /* result amount and time --about */
+            '.      main    aside'
+            '.      main    aside'
+            '.      main    aside'
+            '.      main    aside'
+            '.      main    aside'
+            '.      main    .'
+            '.      main    .'
+            '.      main    .'
+            '.      main    .'
+            '.      main    .'
+            '.      main    .'  /* people-ask */
+            '.      main    .'  /* related searches */
+            '.      main    .'  /* goooogle pages */
+            'footer footer  footer'
+            'footer footer  footer';
 }
 
-/* SEARCH AREA */   
-.header {
-    grid
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+}
+.about {
+    grid-area: about;
+}
+main {
+    grid-area: main;
+}
+
+aside {
+    grid-area: aside;
+}
+
+footer {
+    grid-area: aside;
 }
