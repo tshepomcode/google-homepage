@@ -2,6 +2,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    margin-top: 15px;
 }
 
 a {
@@ -39,28 +40,51 @@ header {
     grid-area: header;
     display: inline-grid;
     grid-template-areas:
-            'g-icon search-form apps-signin'
+            'g-icon search-form search-form search-form apps-signin apps-signin';
+    height: 48px;
 }
 
 .search-item {
+    grid-area: search-form;
     display: flex;
     justify-content: center;
+    justify-items: center;
     align-items: center;
+    border: thin solid #dfe1e5;
+    border-radius: 24px;
 }
 
 .logo {
     grid-area: g-icon;
+    align-items: center;
 }
 
-.searchbox {
+.logo a {
+    padding-top: 10px;
+    text-align: center;
+}
+
+/* .search-box {
     grid-area: search-form;
+    border: thin solid #dfe1e5;
+    border-radius: 24px;
+} */
+
+.search-img-holder {
+    margin-right: 15px;
 }
 
-.mic {
-    background:url(/img/googlemic_color_24dp.png) 0 0 no-repeat;
-    height: 24px;
+.img-mic, .img-search-glass, .apps-icon {
     width: 24px;
-    background-size: 24px;
+    height: 24px;
+}
+
+.text-input {
+    background-color: transparent;
+    border: none;
+    color: black;
+    flex-grow: 1;
+    padding-left: 20px;
 }
 
 .box_signin {
